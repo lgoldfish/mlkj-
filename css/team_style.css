@@ -1,0 +1,503 @@
+body {
+	font-family: "微软雅黑";
+	width:100%;
+	color: #323232;
+	font-size: 14px;
+}
+.clear {
+	clear:both;
+}
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+/*头部样式*/
+header {
+	width: 100%;
+}
+header .header {
+	height: 73px;
+}
+header .header div {
+	background: url(../images/malong_logo_black@2x.png) no-repeat;
+	background-size: contain;
+	width: 107px;
+	height: 26px;
+	margin-left: 15px;
+	display: inline-block;
+	margin-top: 36.5px;
+	transform:translateY(-13px);
+	float: left;
+	cursor: pointer;
+}
+header .header span {
+	float: right;
+	line-height: 73px;
+	display: inline-block;
+	font-size:25px; 
+	padding-right: 15px;
+	font-weight: 100;
+	color:#444;
+	cursor: pointer;
+}
+header nav {
+	display: none;
+}
+header nav ul {
+	padding: 0 15px 0 15px;	
+}
+header nav ul li {
+	height: 44px;
+	border-bottom: 1px solid #ccc;
+	cursor: pointer;
+	line-height: 44px;
+}
+header nav ul li a {
+	color:#444;
+}
+/*banner图样式*/
+.banner {
+	position: relative;
+}
+.banner img {
+	width: 100%;
+}
+.mlteam {
+	padding:80px 0 40px 0; 
+}
+.picturewall {
+	padding-top: 40px;
+}
+.mlteam h2,.mltv h2,.mltv-2 h2, .picturewall h2 {
+	font-weight: 700;
+    text-align: center;
+    color: #323232;
+    font-size: 36px;
+    line-height: 33px
+}
+.mlteam .line ,.mltv .line ,.mltv-2 .line,  .picturewall .line {
+	margin: 20px auto;
+    height: 4px;
+    width: 44px;
+    background-image: linear-gradient(97deg,#a234d5,#d74059);
+    margin-bottom: 30px;
+}
+.mlteam img {
+	display: block;
+    width: 70%;
+    max-width: 399px;
+    margin: 0 auto;
+    opacity: 0.3;
+}
+.mlteam p {
+	width: 70%;
+    margin: 30px auto;
+    color: #7b7b7b;
+    line-height: 1.6;
+    opacity: 0;
+}
+/*码隆TV 板块*/
+.mltv {
+	padding: 40px 20px;
+	background: #f9f9f9;
+}
+.mltv-2 {
+	display: none;
+}
+.mltv .tv li {
+	width: 100%;
+	display: none;
+	position: relative;
+}
+.mltv .tv li:nth-of-type(1){
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.mltv .tv li div button {
+	cursor: pointer;
+	border:0;
+	display: block;
+	width: 97px;
+	height: 97px;
+	background: url(../images/button_play.png) no-repeat;
+	background-size: cover;
+    position: absolute;
+    z-index: 100!important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.mltv .tv li div h3 {
+	text-align: center;
+	padding-bottom: 15px;
+}
+.mltv .tv li video {
+	width: 100%;
+	border-radius:16px;
+}
+.mltv .button {
+	display: flex;
+	justify-content:center;
+}
+.mltv .button li {
+	display: block;
+	border-radius: 50%;
+	margin:30px 10px;
+	width:9px;
+	height:9px;
+	background-color: #ccc;
+	cursor: pointer;
+}
+.mltv .button li:nth-of-type(1){
+    background: #c63885;
+}
+
+/*马隆照片墙*/
+.picturewall {
+	padding: 40px 0 0;
+}
+.picturewall .pictures figure {
+	position: relative;
+	margin:0;
+	display: inline-block;
+	padding: 0;
+	border:0;
+}
+.picturewall .pictures figure img {
+	width: 100%;
+}
+.picturewall .pictures figure img:nth-of-type(2){
+	display: none;
+}
+.picturewall .pictures figure p {
+   	width: 100%;
+    background-color: rgba(0,0,0,.48);
+    color: #fff;
+    position: absolute;
+    line-height: 44px;
+    text-indent: 1.2em;
+    font-size: 12px;
+    bottom: 0;
+}
+.picturewall .pictures figure:nth-of-type(1){
+	width: 38%;
+}
+.picturewall .pictures figure:nth-of-type(2){
+	width: 61%;
+}
+.picturewall .pictures figure:nth-of-type(3){
+	width: 29%;
+}
+.picturewall .pictures figure:nth-of-type(4){
+	width: 70%;
+}
+.picturewall .pictures figure:nth-of-type(5){
+	width: 71%;
+}
+.picturewall .pictures figure:nth-of-type(6){
+	width: 28%;
+}
+.picturewall .pictures figure:nth-of-type(7){
+	width: 45%;
+}
+.picturewall .pictures figure:nth-of-type(8){
+	width: 54%;
+}
+.picturewall .pictures figure:nth-of-type(9){
+	width: 56%;
+}
+.picturewall .pictures figure:nth-of-type(10){
+	width: 43%;
+}
+.picturewall .pictures figure:nth-of-type(11){
+	width: 69.5%;
+}
+.picturewall .pictures figure:nth-of-type(12){
+	width: 29.5%;
+}
+/*尾部样式*/
+footer {
+	padding: 30px 10px;
+	background: #272727;
+}
+footer {
+	font-size: 12px;
+	color: #777;
+}
+footer a {
+	color: #a0a0a0;
+	cursor: pointer;
+}
+footer a:hover {
+	text-decoration:underline;
+}
+footer ul li {
+	padding-bottom: 40px;
+}
+footer ul li h2 {
+	color: #eee;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 33px;
+}
+footer ul li h2:after {
+	background-image:linear-gradient(97deg,#a234d5,#d74059);
+	width: 75px;
+	content: "";
+    display: block;
+    height: 4px;
+    margin: 10px 0 20px;
+}
+footer ul li ul li {
+	padding: 6px 0px;
+}
+footer ul li ul li img {
+	width: 100px;
+	height: 100px;
+	margin-top: 8px;
+}
+footer ul li ul li p {
+	line-height: 20px;
+}
+footer ul li ul li p span {
+	color:#c63885;
+	cursor: pointer;
+}
+ .bottom {
+	text-align: center;
+	background: #222;
+    padding: 20px 0 10px;
+    font-weight: 300;
+    font-size: 12px;
+    color: #777;
+    line-height: 1.6;
+    width: 100%;
+    cursor: pointer;
+}
+#topcontrol {
+	 /*background: #222;*/
+}
+#topcontrol img {
+	width: 50px;
+    height: 50px;
+    display: block;
+    border-radius: 18px;
+}
+
+/*断点*/
+@media(min-width:992px){
+.container{
+	width:970px;
+	margin: 40px auto 0;
+		}
+header {
+		background:transparent;
+		position: fixed;
+		z-index: 1000;
+	}
+	header .header {
+		float: left;
+		margin-left: 4%;
+	}
+	 header .header div {
+	 background: url(../images/malong_logo@2x.png) no-repeat;
+	 background-size: contain;
+	 width: 107px;
+	 height: 26px;
+	 }
+	 header .header span {
+	 	display: none;
+	 }
+	 header nav {
+	 	margin-left: 44%;
+	 	display: block !important;
+	 }
+	 header nav ul li {
+	 	float: left;
+	 	border-bottom: none;
+	 }
+	 header nav ul li a:after {
+	    background-image: linear-gradient(97deg,#a234d5,#d74059);
+	 	content: "";
+    	display: block;
+    	position: absolute;
+    	top: 27px;
+    	left: 0;
+    	height: 3px;
+    	width: 100%;
+    	animation: scaleX 0.3s ease;
+    	display: none;
+	 }
+	 header nav ul li:nth-child(5) a{
+	 background-image: linear-gradient(97deg,#a234d5,#d74059);
+     padding: 10px 12px;
+     border-radius: 20px;
+	 }
+	 header nav ul li:nth-child(4) a:after {
+	 	display: block;
+	 }
+	 @keyframes scaleX
+		{
+		from {width:0;}
+		to {width:100%;}
+		}
+	  header nav ul li:hover a:after {
+	  	display: block;	  	
+	  }
+
+	  header nav ul li:nth-child(5):hover a:after {
+	 	display: none;
+	 }
+	 header nav ul li a {
+	 	display: block;
+	 	margin: 23px 16px;
+    	padding: 7px 4px;
+    	line-height: 1;
+    	font-weight: 300;
+    	color: #fff;
+    	position: relative;
+	 }
+	.picturewall .pictures figure:nth-of-type(1){
+		width: 20.6%;
+	}
+	.picturewall .pictures figure:nth-of-type(2){
+		width: 33.1%;
+	}
+	.picturewall .pictures figure:nth-of-type(3){
+		width: 13%;
+	}
+	.picturewall .pictures figure:nth-of-type(4){
+		width: 31.5%;
+	}
+	.picturewall .pictures figure:nth-of-type(5){
+		width: 33.35%;
+	}
+	.picturewall .pictures figure:nth-of-type(6){
+		width: 13%;
+	}
+	.picturewall .pictures figure:nth-of-type(7){
+		width: 24%;
+	}
+	.picturewall .pictures figure:nth-of-type(8){
+		width: 28.1%;
+	}
+	.picturewall .pictures figure:nth-of-type(9){
+		width: 31.5%;
+	}
+	.picturewall .pictures figure:nth-of-type(10){
+		width: 24%;
+	}
+	.picturewall .pictures figure:nth-of-type(11){
+		width: 30.2%;
+	}
+	.picturewall .pictures figure:nth-of-type(12){
+		width: 13%;
+	}
+	
+}
+@media(min-width:1200px) {
+	.container{
+		width:1170px;
+		margin: 40px auto 0;
+			}
+	 header nav {
+	 	margin-left: 55%;
+	 }
+	 .mlteam {
+	 	width: 1030px;
+	 	margin:0 auto;
+	 }
+	 .mlteam img:nth-of-type(1){
+	 	float: left;
+	 	vertical-align: middle;
+	 	margin-right: 40px;
+	 }
+	  .mlteam img:nth-of-type(2){
+	 	float: right;
+	 	vertical-align: middle;
+	 }
+	 .mlteam p {
+	    margin-top: 18%;
+	    transform: translateY(-50%);
+	    width: 601px;
+	 }
+	 .mlteam p:nth-of-type(1){
+	 	margin-left: 445px;
+	 }
+	 .mlteam p:nth-of-type(2){
+	 	margin-left: 0;
+	 }
+	 .mltv {
+	 	display: none;
+	 }
+	 .mltv-2 {
+	 	display: block;
+		padding: 40px 20px;
+		background: #f9f9f9;
+	 }
+	 .mltv-2 .tv {
+	 	display: flex;
+	 	justify-content:center;
+	 	align-items:center;
+	 }
+	 .mltv-2 .tv li {
+	 	position: relative;
+	 	border-radius: 16px;
+	 	display: block;
+	 }
+	 .mltv-2 .tv li:nth-of-type(1){
+		width: 706px;
+		height: 397px;
+	    background-image: linear-gradient(161deg,rgba(97,203,250,.15),rgba(28,37,247,.15));
+	 	color: #7B89F0;
+	 }
+	 .mltv-2 .tv li:nth-of-type(2){
+		width: 180px;
+		height: 328px;
+		margin:0 25px;
+	    background-image: linear-gradient(161deg,rgba(162,52,213,.15),rgba(215,64,89,.15));
+	 	color:#c63885;
+	 }
+	 .mltv-2 .tv li:nth-of-type(3){
+		width: 180px;
+		height: 280px;
+		background-image: linear-gradient(161deg,rgba(250,217,97,.15),rgba(247,107,28,.15));
+ 	    color: #fc9d4c;
+	 }
+	 .mltv-2 .tv li div {
+	 	text-align: center;
+	 }
+	 .mltv-2 .tv li div h3 {
+	 	margin: 35px auto 30%;
+	 	line-height: 20px;
+	 	font-size: 16px;
+	 	font-weight: 400;
+	}
+	.mltv-2 .tv li div button {
+		cursor: pointer;
+		border:0;
+		display: block;
+		width: 97px;
+		height: 97px;
+		background: url(../images/button_play.png) no-repeat;
+		background-size: cover;
+	    position: absolute;
+	    z-index: 100!important;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%,-50%);
+	    z-index: 0;
+	}
+	 .mltv-2 .tv li video {
+	 	 position: absolute;
+	 	 border-radius: 16px;
+	 	 width: 100%;
+	 	 top:0;
+	 	 opacity:0;
+	 	 z-index: 1;
+	 }
+	 .mltv-2 .tv li:nth-of-type(1) video{
+	 	opacity: 1;
+	 }
+}
