@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>ProductAI – 为你的产品植入人工智能</title>
+	<link rel="shortcut icon" href="images/malong_logo.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<style>
+		body {
+		overflow-x:hidden;
+		overflow-y:hidden;
+		}
+		body .container {
+	    	color: #fff;
+		    background:#222;
+		    width: 100%;
+		    height: 1500px;
+		    padding-top: 100px;
+		}
+		body .container .header {
+			margin: 0 auto;
+			width: 440px;
+		}
+		body .container .header img {
+			width: 220px;
+		}
+		body .container .header h2 {
+			display: inline;
+			padding: 0 50px;
+			font-size: 25px;
+			font-weight: 500;
+    		line-height: 1.1;
+		}
+		body .container .header hr {
+		   	width: 300px;
+		    border-width: 2px;
+		    opacity: .09;
+		    margin: 15px 33px 30px;
+		}
+		body .container form {
+			width: 990px;
+			margin: 0 auto;
+		}
+		body .container form input ,body .container form textarea, body .container form button body, .container form select{
+			margin:12px 15px;
+			height: 38px;
+			border-radius: 5px;
+			border:0;
+			background: #444444;
+			text-indent: 12px;
+			color: #fff;
+		}
+		body .container form input:focus ,body .container form textarea:focus, body .container form button body:focus, .container form select:focus {
+			background: #fff;
+			color: #000;
+		}
+		body .container form input:nth-of-type(1){
+			width: 213.75px;
+		}
+		body .container form input:nth-of-type(2){
+			width: 295px;
+		}
+		body .container form input:nth-of-type(3){
+			width: 376.25px;
+		}
+		body .container form input:nth-of-type(4),body .container form input:nth-of-type(5){
+			width: 253.8px;
+		}
+		body .container form select {
+			width: 376.25px;
+		}
+
+		body .container form textarea {
+			width: 952.5px;
+			height: 205px;
+		    padding: 6px 0;
+    		line-height: 1.5;
+    		font-family: '微软雅黑';
+		}
+		body .container form button {
+			display: block;
+			margin: 0 auto;
+		    border: 1px solid #f0f0f0;
+	        border-radius: 290px;
+	        width: 195px;
+	        height: 43px;
+	        background-color: transparent;
+	        font-size: 18px;
+	        letter-spacing: 14px;
+	        text-indent: 14px;
+		}
+		body .container form button a {
+			 color: #fff;
+			 display: block;
+		}
+		body .bottom {
+			background:#2d2d2d;
+			height: 47px;
+			width: 100%;
+			text-align: center;
+			position: fixed;
+			bottom:0px;
+			color:#fff;
+			font-size: 12px;
+			line-height: 47px;
+			font-weight: lighter;
+		}
+		@media only screen and (max-width: 980px){
+		body .container .header {
+			margin: 0 auto;
+			width:80%;
+			margin-top: -80px;
+		}
+		body .container .header img {
+			width: 160px;
+			display: block;
+			margin: 0 auto;
+		}
+		body .container .header h2 {
+			font-size: 20px;
+			padding:20px 0;
+			display: block;
+			width: 80px;
+			margin: 0 auto;
+		}
+		body .container .header hr {
+		   	width: 130px;
+		    border-width: 2px;
+		    opacity: .09;
+		    margin: 0 auto 10px;
+		}
+		body .container form {
+			width: 80%;
+			margin: 0 auto;
+		}
+		body .container form input ,body .container form textarea, body .container form button body, .container form select{
+			width: 100% !important;
+			margin:10px 0;
+		}
+		.container form textarea {
+			height: 120px !important;
+		}
+		.bottom {
+			display: none;
+		}
+	}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<img src="images/productai_logo.png" alt="">
+			<h2>填写注册</h2>
+			<hr>
+		</div>
+		<form action="#">
+			<input type="text" placeholder='姓名 <必填>'>
+			<input type="text" placeholder='电话 <必填>'>
+			<input type="text" placeholder='邮箱 <必填>' name='email'>
+			<br>
+			<input type="text" placeholder='密码 <必填>' name='password'>
+			<input type="text" placeholder='再次输入密码 <必填>' name='password2'>
+			<select name="" id="" >
+				<option value="" disabled selected>信息来源 <必填 ></option>
+				<option value="">线下活动（如：展会、演讲、沙龙、比赛）</option>
+				<option value="">线上活动（如：微信文章、直播）</option>
+				<option value="">广告</option>
+				<option value="">百度搜索</option>
+				<option value="">媒体报导</option>
+				<option value="">朋友推荐</option>
+				<option value="">其他</option>
+			</select>
+			<br>
+			<textarea name="" id="" cols="30" rows="10" placeholder="留言"></textarea>
+			<br>
+			<button><a href="#">确定</a></button>
+		</form>
+	</div>
+	<div class="bottom">
+		<span>Copyright All Rights Reserved. Malong © 2017 | 粤ICP备15033454号</span>
+	</div>
+</body>
+	<script src='javascript/jquery-1.12.4.min.js'></script> 
+	<script>
+	$(function(){
+		$("[name='email'],[name='password']").blur(function(){
+  		 var email = $('[name="email"]').val();
+  		 var password=$('[name="password"]').val();
+  		 var reg = /\w+[@]{1}\w+[.]\w+/;
+  		 var reg2=/^[a-zA-Z0-9]{6,10}$/;
+   		$('button').click(function(){
+   			if(reg.test(email)){
+   		}else{
+   			$("[name='email']").val("请输入正确的email地址");
+   			$("[name='email']").css('color','red')
+   		}
+		if(reg2.test(password)){
+				if(password==$("[name='password2']").val()){
+					console.log(password)
+					console.log($("[name='password2']").val())
+   		  		}else{
+   		  			$("[name='password']").val('两次密码不一致，请重新输入').css('color','red')
+   		  		}
+   		}else{
+   			$("[name='password']").val("密码为6-10位的数字/字母");
+   			$("[name='password']").css('color','red')
+   		}
+   		  
+   		})
+  		})
+	})
+	</script>	
+</html>
